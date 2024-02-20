@@ -11,14 +11,12 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <Router>
-      
+    <Router basename={import.meta.env.BASE_URL}>
         <>
           <Header />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/Portfolio" element={<Landing />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
